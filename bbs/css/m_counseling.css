@@ -1,0 +1,359 @@
+@media screen and (max-width: 1860px) {
+    .field_wrap input {
+        width: 200%;
+    }
+}
+@media screen and (max-width: 1850px) {
+    .field_wrap input {
+        width: 197%;
+    }
+}
+@media screen and (max-width: 1815px) {
+    .field_wrap input {
+        width: 195%;
+    }
+}
+@media screen and (max-width: 1770px) {
+    .field_wrap input {
+        width: 191%;
+    }
+}
+/* /* @media screen and (max-width: 1820px) {
+    .field_wrap input {
+        width: 200%;
+    }
+} */
+@media screen and (max-width: 1700px) {
+    .field {
+        margin-right: 17%;
+    }
+    .field_wrap {
+        padding-left: 20.9%;
+        justify-content: inherit;
+    }
+    .field_wrap input {
+        width: 168%;
+    }
+}
+@media screen and (max-width: 1460px) {
+    .field {
+        margin-right: 16%;
+    }
+    .field_wrap input {
+        width: 157%;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .field {
+        margin-right: 15%;
+    }
+    .field_wrap input {
+        width: 153%;
+    }
+}
+@media screen and (max-width: 1380px) {
+    .field {
+        margin-right: 15%;
+    }
+    .field_wrap input {
+        width: 149%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .field {
+        margin-right: 13%;
+    }
+    .field_wrap input {
+        width: 141%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .field {
+        margin-right: 12%;
+    }
+    .field_wrap input {
+        width: 135%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .field {
+        margin-right: 11%;
+    }
+    .field_wrap input {
+        width: 130%;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .field {
+        margin-right: 10%;
+    }
+    .field_wrap input {
+        width: 125%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .field {
+        margin-right: 8%;
+    }
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 36%;
+        
+    }
+    .field_wrap input {
+        width: 119%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #footer {
+        margin-top: 71px;
+    }
+    .customer span {
+        padding-left: 34%;
+    }
+}
+@media screen and (max-width: 910px) {
+    .title_1 span {
+        padding-left: 28%;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .field_wrap input {
+        width: 94%;
+        height: 50px;
+    }
+    .field {
+        margin-right: 3%;
+    }
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 32%;
+        
+    }
+    
+}
+@media screen and (max-width: 827px) {
+    h3 {
+        font-size: 12px;
+    } 
+    label,input,option {
+        font-size: 10px;
+    }
+    .field_wrap input {
+        width: 69%;
+        height: 50px;
+    }
+    .field_wrap {
+        display: grid;
+        justify-content: initial;
+        padding-left: 21%;
+    }
+    .field {
+        margin-right: 0;
+    }
+    .field label {
+        font-size: 15px;
+    }
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 37%; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .title_1 span {
+        padding-left: 21%;
+    }
+    .field_wrap {
+        text-align: center;
+        padding-left: 0;
+    }
+    .field_wrap input {
+        width: 90%;
+    }
+    .field_1 {
+        padding-right: 63%;
+    }
+    .field_2 {
+        display: grid;
+        padding-left: 5.3%;
+        justify-content: inherit;
+    }
+    .field_2 select {
+        width: 95%;
+    }
+    .field_3 textarea {
+        width: 89.2%;
+        margin-right: 0;
+    }
+    .field_4 input {
+        width: 88.7%;
+        margin-right: 0;
+    }
+    .title {
+        width: 86%;
+    }
+}
+@media screen and (max-width: 662px) {
+    #header {
+        margin-top: -4px;
+        margin-bottom: 100px;
+    }
+    .header {
+        display: none;
+    }
+    #header .nav ul {
+        display: none;
+        flex-direction: column;
+        padding-top: 35px;
+        /* display: block !important; */
+    }
+    #header .nav ul li a {
+        color: #fff;
+    }
+    #header .nav {
+        z-index: 10;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #49647B;
+        text-align: center;
+        opacity: 0.6;
+    }
+    #header .nav .btn_menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 15%;
+        height: 44px;
+        background: url(./../img/ico_menu_1.png) no-repeat 50% 50% / 30px auto;
+        text-indent: -9999em;
+        cursor: pointer;
+    }
+
+    #header .logo {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .title_1 span {
+        padding-left: 14%;
+    }
+    .field label {
+        font-size: 10px;
+    }
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 32%; 
+    }
+    .field_3 textarea {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 662px) {
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 28%; 
+    }
+    .title_1 h1 {
+        font-size: 20px;
+    }
+    .title_1 span {
+        font-size: 14px;
+        padding-left: 35%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .title_1 span {
+        font-size: 14px;
+        padding-left: 30%;
+    }
+    .field_1 {
+        display: grid;
+        flex-wrap: wrap;
+        padding-right: 22%; 
+    }
+    .field_2 {
+        display: grid;
+        justify-content: initial;
+        padding-left: 21.3%;
+    }
+    .field_2 select {
+        width: 69%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .title_1 span {
+        padding-left: 24%;
+    }
+    .field_wrap {
+        text-align: center;
+        padding-left: 0;
+    }
+    .field_wrap input {
+        width: 90%;
+    }
+    .field_1 {
+        padding-right: 49%;
+    }
+    .field_2 {
+        display: grid;
+        padding-left: 5.3%;
+    }
+    .field_2 select {
+        width: 95%;
+    }
+    .field_3 textarea {
+        width: 89.2%;
+        margin-right: 0;
+    }
+    .field_4 input {
+        width: 88.7%;
+        margin-right: 0;
+    }
+    .title {
+        width: 86%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .field_1 {
+        padding-right: 44%;
+    }
+    .field_3 textarea {
+        /* font-size: 10px; */
+        padding: 1%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .title_1 span {
+        padding-left: 15%;
+    }   
+}
+@media screen and (max-width: 360px) {    
+    .title_1 span {
+        padding-left: 12%;
+    } 
+    .field_1 {
+        padding-right: 40%;
+    }  
+}
+@media screen and (max-width: 320px) {
+    .field_1 {
+        padding-right: 30%;
+    }  
+    .field_3 textarea {
+        /* font-size: 10px; */
+        padding: 2%;
+    }
+}

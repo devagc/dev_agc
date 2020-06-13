@@ -1,0 +1,132 @@
+@media screen and (max-width: 1000px) {
+    .visual_nav ul li a {
+        padding: 33px 70px 33px;
+    }
+    .id {
+        width: 55%;
+    }
+    .view {
+        width: 55%;
+    }
+    .comment_1 {
+        width: 55%;
+    }
+    #comment {
+        width: 55%;
+    }
+    .comment {
+        width: 55%;
+    }
+    .wrea textarea {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .id {
+        width: 66%;
+    }
+    .view {
+        width: 66%;
+    }
+    .comment_1 {
+        width: 66%;
+    }
+    #comment {
+        width: 66%;
+    }
+    .comment {
+        width: 66%;
+    }
+    .wrea textarea {
+        width: 66%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #header {
+        margin-top: -4px;
+        margin-bottom: 100px;
+    }
+    .header {
+        display: none;
+    }
+    #header .nav ul {
+        display: none;
+        flex-direction: column;
+        padding-top: 35px;
+        /* display: block !important; */
+    }
+    #header .nav ul li a {
+        color: #fff;
+    }
+    #header .nav {
+        z-index: 10;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #49647B;
+        text-align: center;
+        opacity: 0.6;
+    }
+    #header .nav .btn_menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 15%;
+        height: 44px;
+        background: url(./../img/ico_menu_1.png) no-repeat 50% 50% / 30px auto;
+        text-indent: -9999em;
+        cursor: pointer;
+    }
+
+    #header .logo {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .visual_nav ul .li {
+        /* display: none; */
+    }
+    .visual_nav ul li a {
+        padding: 33px 58px 33px;
+    }
+
+}
+@media screen and (max-width: 484px) {
+    .visual_nav ul li a {
+        padding: 33px 48px 33px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .visual_nav ul li a {
+        padding: 33px 38px 33px;
+    }
+    .wrea button {
+        padding: 10px 25px 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .visual_nav ul li a {
+        padding: 33px 38px 33px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .visual_nav ul li a {
+        padding: 33px 28px 33px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .wrea button {
+        padding: 10px 13px 10px;
+    }
+    .id {
+        font-size: 10px;
+    }
+    .id img {
+        width: 20px;
+    }
+    .comment_1 {
+        font-size: 10px;
+    }
+}

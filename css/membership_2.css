@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* reset */
+*{box-sizing: border-box;}
+body,section,article,aside,nav,header,footer,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{
+    margin:0;padding:0
+}
+fieldset,img{
+    border:0 none
+}
+img {
+    vertical-align: top; /* 인라인 수평맞추는것 */
+}
+dl,ul,ol,menu,li{
+    list-style:none
+}
+blockquote,q{
+    quotes: none /*따옴표 안생기게*/
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';content:none
+}
+input,select,textarea,button{
+    border-radius:0;vertical-align:middle
+}
+input::-ms-clear{
+    display:none
+}
+button{
+    border:0 none;background-color:transparent;cursor:pointer
+}
+body{
+    background:#fff;direction:ltr;-webkit-text-size-adjust:none
+}
+body,th,td,input,select,textarea,button{
+    font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'Montserrat',sans-serif;color:#1a1b1f;
+}
+a{
+    color:#222;text-decoration:none
+}
+a:hover{
+    color:#454545;text-decoration:underline
+}
+address,caption,cite,code,dfn,em,var{
+    font-style:normal;font-weight:normal
+}
+hr {
+     display: none;
+}
+
+.blind,legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.skip a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    z-index: 9999;
+    padding: 0 1em;
+    background-color: #010101;
+    color: #a0a0a0;
+    line-height: 2.2;
+}
+.skip a:focus {
+    top: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.s1140 {width: 1140px; margin: 0 auto;}
+.m1140 {min-width: 1140px; margin: 0 auto;}
+/* 로그인 css 끌어옴 */
+body,form,p,ul,li,form,fieldset {
+    margin: 0;
+    padding: 0;
+    font-family: 'jua';
+}  
+/* 바디 안에 있는 모든 태그들을 스타일 초기화 */
+body,input,button {
+    color: #767676;
+    font-family: 'Malgun Gothic',sans-serif;
+    font-size: 14px;
+}
+/* 바디안에 인풋과 버튼을 컬러와 글씨체를 바꾸고 글씨체 크기를 바꾼다. */
+li {
+    list-style: none;
+}
+/* ul안에 li태그를 쓰면은 ● 이런식으로 옆에 생기는데 그걸 없애주는 역활을 한다. */
+fieldset {
+    border: 0;
+}
+/* 필드셋이라는 감싸주는 태그 겉에 선을 없게 만들어준다. */
+.blind, legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.login {
+    position: relative;
+    width: 384px;
+    margin: 25px auto;
+    border: 1px solid #555;
+    background-color: #fff ;
+    text-align: center;
+}
+.login .img {
+    margin-top: 40px;
+}
+.login .close {
+    position: absolute;
+    right: 0;
+    top:0;
+    /* background: url(./../img/logo1.png)no-repeat 50% 50% / cover; */
+}
+.login .close button {
+    /* width: 20px; */
+    height: 28px;
+    border: 0;
+    background: none;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    /* line-height: 28px; */
+    cursor: pointer;
+}
+.login fieldset {
+    padding: 28px 28px 0;
+}
+.login .field {
+    margin-bottom: 5px;
+} 
+.login .inp_field {
+    width: 326px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    border-color: #b7b7b7 #e1e1e1 #e1e1e1 #b7b7b7;
+    text-indent: 10px;
+    border-radius: 3px;
+}
+.login .inp_field::placeholder {
+    color:#aaa;
+}
+.login .btn_area {
+    padding: 5px 0 10px;
+    *zoom: 1;
+}
+.login .btn_area:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.login .btn_area .left {
+    float:left;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+.login .btn_area .right {
+    float:right;
+    height: 30px;
+    padding: 0 20px;
+    border: 1px solid #3273dc;
+    border-radius: 4px;
+    background-color: #3273dc;
+    color: #fff;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.login .btn_area .right:hover {
+    background-color: #3b83f8;
+    transition: all 0.6s;
+}
+button img {
+    width: 20px;
+}
+
+.login .link {
+    border-top: 1px solid #aaa;
+    font-size: 11px;
+    text-align: center;
+    line-height: 42px;
+    
+}
+.login .link li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+}
+.login .link li {
+    display: inline-block;
+    padding-right: 12px;
+    margin-right: 6px;
+    border-right: 1px solid #c3c3c3;
+    line-height: 12px;
+}
+.login .link li a {
+    text-decoration: none;
+    color: #767676;
+}
+.login .link li a:hover {
+    color: blue
+}
+.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+
+}
+.sns {
+    width: 100%;
+    text-align: center;
+    margin: inherit;
+}
+.sns ul li {
+    margin: 14px 0 0;
+}
+.sns img {
+    width: 350px;
+}
+/* style */
+
+#contact {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 3%;
+    font-family: 'jua';
+}
+#contact h2 {
+    padding-bottom: 2%;
+}
+#contact label {
+    font-size: 15px;
+    font-weight: 500;
+    /* text-align: start; */
+    display: none;
+}
+#contact input {
+    /* border-radius: 3px; */
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #b3aeae;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-family: 'jua';
+    /* color: #353333; */
+    opacity: 0.6;
+    font-weight: 500;
+    width: 230px;
+    height: 50px;
+}
+.field_in {
+    margin: auto;
+}
+.right {
+    padding: 5px 15px 5px;
+    background-color: #3273dc;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 10px 0px 10px;
+}
+.right:hover {
+    background-color: #3b83f8;
+    transition: all 0.6s;
+}

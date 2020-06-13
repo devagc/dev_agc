@@ -1,0 +1,102 @@
+@media screen and (max-width: 1000px) {
+    .visual_nav ul li a {
+        padding: 33px 70px 33px;
+
+}
+@media screen and (max-width: 991px) {
+    .input-group {
+        /* width: 50%; */
+    }
+    .col-lg-6 {
+        width: auto;
+    }
+    .content .table {width: 74%;}
+}
+@media screen and (max-width: 800px) {
+    .content .table {width: 74%;}
+}
+@media screen and (max-width: 600px) {
+    #header {
+        margin-top: -4px;
+        margin-bottom: 100px;
+    }
+    .header {
+        display: none;
+    }
+    #header .nav ul {
+        display: none;
+        flex-direction: column;
+        padding-top: 35px;
+        /* display: block !important; */
+    }
+    #header .nav ul li a {
+        color: #fff;
+    }
+    #header .nav {
+        z-index: 10;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background-color: #49647B;
+        text-align: center;
+        opacity: 0.6;
+    }
+    #header .nav .btn_menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 15%;
+        height: 44px;
+        background: url(./../img/ico_menu_1.png) no-repeat 50% 50% / 30px auto;
+        text-indent: -9999em;
+        cursor: pointer;
+    }
+
+    #header .logo {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .content .table {width: 87%;}
+    .row {
+        width: 80%;
+        margin: auto;
+    }
+    .col-lg-6 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .visual_nav ul .li {
+        /* display: none; */
+    }
+    .visual_nav ul li a {
+        padding: 33px 58px 33px;
+    }
+    td {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 484px) {
+    .visual_nav ul li a {
+        padding: 33px 48px 33px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .visual_nav ul li a {
+        padding: 33px 38px 33px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .visual_nav ul li a {
+        padding: 33px 38px 33px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .visual_nav ul li a {
+        padding: 33px 28px 33px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .content .table {width: 87%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+}

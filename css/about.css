@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* reset */
+*{box-sizing: border-box;}
+body,section,article,aside,nav,header,footer,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{
+    margin:0;padding:0
+}
+fieldset,img{
+    border:0 none
+}
+img {
+    vertical-align: top; /* 인라인 수평맞추는것 */
+}
+dl,ul,ol,menu,li{
+    list-style:none
+}
+blockquote,q{
+    quotes: none /*따옴표 안생기게*/
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';content:none
+}
+input,select,textarea,button{
+    border-radius:0;vertical-align:middle
+}
+input::-ms-clear{
+    display:none
+}
+button{
+    border:0 none;background-color:transparent;cursor:pointer
+}
+body{
+    background:#fff;direction:ltr;-webkit-text-size-adjust:none
+}
+body,th,td,input,select,textarea,button{
+    font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'Montserrat',sans-serif;color:#1a1b1f;
+}
+a{
+    color:#222;text-decoration:none
+}
+a:hover{
+    color:#454545;text-decoration:underline
+}
+address,caption,cite,code,dfn,em,var{
+    font-style:normal;font-weight:normal
+}
+hr {
+     display: none;
+}
+
+.blind,legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.skip a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    z-index: 9999;
+    padding: 0 1em;
+    background-color: #010101;
+    color: #a0a0a0;
+    line-height: 2.2;
+}
+.skip a:focus {
+    top: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.s1140 {width: 1140px; margin: 0 auto;}
+.m1140 {min-width: 1140px; margin: 0 auto;}
+
+/* style */
+#header {
+    width: 100%;
+    /* margin-bottom: 50px; */
+    margin: 0 auto;
+    /* position: absolute; */
+    /* z-index: 100; */
+    border: none;
+    background-color: initial;
+    padding-top: 1%;
+}
+#header .logo {
+    margin: auto;
+}
+#header a {
+    font-family: 'jua';
+    text-decoration: none;
+    color: #000;
+}
+#header .nav {
+    display: flex;
+    margin: auto;
+}
+#header .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#header .nav ul li {
+    margin: 5px 15px 5px;
+    transition: ease-out all 0.3s;
+}
+#header .nav ul li:hover {
+    margin-top: 3px;
+}
+.btn_menu {
+    display: none;
+}
+#visual {
+    background: url(./../img/visual_bg.png) no-repeat 50% 50% / cover;
+    width: 100%;
+    height: 232px;
+    position: relative;
+    z-index: 10;
+}
+#visual h1,p {
+    font-family: 'jua';
+    color: #fff;
+}
+#visual span {
+    font-size: 18px;
+}
+#visual_1 {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    border: none;
+    background-color: initial;
+    /* padding-top: 1% */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* margin-top: -3.9%; */
+}
+.visual_nav {
+    margin-top: -51px;
+}
+.visual_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'jua';
+    justify-content: center;
+    /* margin-top: 5%; */
+}
+.visual_nav ul li {
+    margin: 1px 1px 1px;
+    /* padding: 33px 135px 33px; */
+}
+.visual_nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 33px 135px 33px;
+    background-color: #76dc90;
+}
+.visual_nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.6s;
+}
+.text {
+    padding-left: 19%;
+    padding-top: 2%;
+}
+.content {
+    width: 100%;
+    font-family: 'jua';
+    text-align: center;
+    margin-top: 60px;
+}
+.content .table {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.content .table tr,td {
+    font-family: 'jua';
+}
+.content p {
+    display: none;
+}
+.content .td {
+    border-top: none;
+}
+.from {
+    width: 100%;
+    text-align: -webkit-right;
+    padding-top: 50px;
+}
+.row {
+    width: 50%;
+    margin-right: 0;
+}
+input {
+    font-family: 'jua';
+}
+.input-group-btn {
+    background-color: powderblue;
+}
+button {
+    font-family: 'jua';
+}
+button:hover {
+    background-color: rgb(189, 222, 226);
+    transition: all 0.6s;
+}
+#footer {
+    background-color: #2f5367;
+    padding: 10px 0 10px;
+    margin-top: 20px;
+}
+#footer .nav {
+    display: flex;
+    margin: auto;
+}
+#footer .logo {
+    margin: auto;
+}
+#footer .address {
+    margin-bottom: 0rem;
+    font-family: 'jua';
+    display: flex;
+}
+#footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nomber img {
+    width: 20px;
+}
+.nomber {
+    width: 50%;
+    margin: auto;
+    text-align: end;
+    padding-top: 30px;
+}
+.nomber a {
+    text-decoration: none;
+}
+.pagination {
+    justify-content: center;
+    padding-top: 20px;
+}
+.pagination li {
+    padding: 10px 10px 10px;
+    margin: 5px 3px 5px;
+}

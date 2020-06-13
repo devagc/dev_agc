@@ -1,0 +1,17 @@
+body {
+    padding-top: 60px;
+}
+
+#header {
+    border-bottom: 1px solid #cdcdcd;
+    background-color: #efefef;
+}
+
+.breadcrumb {
+    border-bottom: 1px solid #dedede;
+    background: none;
+}
+
+#footer {
+    border-top: 1px solid #ddd;
+}

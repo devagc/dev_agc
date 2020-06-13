@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* reset */
+*{box-sizing: border-box;}
+body,section,article,aside,nav,header,footer,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{
+    margin:0;padding:0
+}
+fieldset,img{
+    border:0 none
+}
+img {
+    vertical-align: top; /* 인라인 수평맞추는것 */
+}
+dl,ul,ol,menu,li{
+    list-style:none
+}
+blockquote,q{
+    quotes: none /*따옴표 안생기게*/
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';content:none
+}
+input,select,textarea,button{
+    border-radius:0;vertical-align:middle
+}
+input::-ms-clear{
+    display:none
+}
+button{
+    border:0 none;background-color:transparent;cursor:pointer
+}
+body{
+    background:#fff;direction:ltr;-webkit-text-size-adjust:none
+}
+body,th,td,input,select,textarea,button{
+    font-size:14px;line-height:1.5;font-family:AppleSDGothicNeo-Regular,'Montserrat',sans-serif;color:#1a1b1f;
+}
+a{
+    color:#222;text-decoration:none
+}
+a:hover{
+    color:#454545;text-decoration:underline
+}
+address,caption,cite,code,dfn,em,var{
+    font-style:normal;font-weight:normal
+}
+hr {
+     display: none;
+}
+
+.blind,legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.skip a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    z-index: 9999;
+    padding: 0 1em;
+    background-color: #010101;
+    color: #a0a0a0;
+    line-height: 2.2;
+}
+.skip a:focus {
+    top: 0;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.s1140 {width: 1140px; margin: 0 auto;}
+.m1140 {min-width: 1140px; margin: 0 auto;}
+
+/* style */
+#header {
+    width: 100%;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* z-index: 100; */
+    border: none;
+    background-color: initial;
+    padding-top: 1%;
+}
+#header .btn_menu {
+    display: none;
+}
+#header .logo {
+    margin: auto;
+}
+#header a {
+    font-family: 'jua';
+    text-decoration: none;
+    color: #000;
+}
+#header .nav {
+    display: flex;
+    margin: auto;
+}
+#header .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#header .nav ul li {
+    margin: 5px 15px 5px;
+    transition: ease-out all 0.3s;
+}
+#header .nav ul li:hover {
+    margin-top: 3px;
+}
+#visual {
+    background: url(./../img/visual_bg.png) no-repeat 50% 50% / cover;
+    width: 100%;
+    height: 232px;
+    position: relative;
+    z-index: 10;
+}
+#visual h1,p {
+    font-family: 'jua';
+    color: #fff;
+}
+#visual span {
+    font-size: 18px;
+}
+#visual_1 {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    border: none;
+    background-color: initial;
+    /* padding-top: 1% */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* margin-top: -3.9%; */
+}
+.visual_nav {
+    margin-top: -51px;
+}
+.visual_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'jua';
+    justify-content: center;
+    /* margin-top: 5%; */
+}
+.visual_nav ul li {
+    margin: 1px 1px 1px;
+    /* padding: 33px 135px 33px; */
+}
+.visual_nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 33px 135px 33px;
+    background-color: #76dc90;
+}
+.visual_nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.6s;
+}
+.text {
+    padding-left: 19%;
+    padding-top: 2%;
+}
+.wrea {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    /* margin: auto; */
+}
+.wrea input {
+    width: 35%;
+    margin: 1px 1px 1px;
+    box-sizing: border-box;
+    border: 1px solid #bbbaba;
+    border-radius: 3px;
+}
+.field {
+    padding-bottom: 15px;
+}
+.wrea textarea {
+    width: 35%;
+    box-sizing: border-box;
+    border: 1px solid #bbbaba;
+    border-radius: 3px;
+}
+.wrea button {
+    padding: 10px 30px 10px;
+    margin: 1px 1px 1px;
+    background-color: #33cc66;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #33cc66;
+    border-radius: 3px;
+}
+.wrea button:hover {
+    color: #000;
+    background-color: #fff;
+    transition: all 0.6s;
+}
+#footer {
+    background-color: #2f5367;
+    padding: 10px 0 10px;
+    margin-top: 20px;
+}
+#footer .nav {
+    display: flex;
+    margin: auto;
+}
+#footer .logo {
+    margin: auto;
+}
+#footer .address {
+    margin-bottom: 0rem;
+    font-family: 'jua';
+    display: flex;
+}
+#footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}

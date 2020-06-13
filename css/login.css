@@ -1,0 +1,153 @@
+body,form,p,ul,li,form,fieldset {
+    margin: 0;
+    padding: 0;
+    font-family: 'jua';
+}  
+/* 바디 안에 있는 모든 태그들을 스타일 초기화 */
+body,input,button {
+    color: #767676;
+    font-family: 'Malgun Gothic',sans-serif;
+    font-size: 14px;
+}
+/* 바디안에 인풋과 버튼을 컬러와 글씨체를 바꾸고 글씨체 크기를 바꾼다. */
+li {
+    list-style: none;
+}
+/* ul안에 li태그를 쓰면은 ● 이런식으로 옆에 생기는데 그걸 없애주는 역활을 한다. */
+fieldset {
+    border: 0;
+}
+/* 필드셋이라는 감싸주는 태그 겉에 선을 없게 만들어준다. */
+.blind, legend {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -9999em;
+    overflow: hidden;
+}
+.login {
+    position: relative;
+    width: 384px;
+    margin: 25px auto;
+    border: 1px solid #555;
+    background-color: #fff ;
+    text-align: center;
+}
+.login .img {
+    margin-top: 40px;
+}
+.login .close {
+    position: absolute;
+    right: 0;
+    top:0;
+    /* background: url(./../img/logo1.png)no-repeat 50% 50% / cover; */
+}
+.login .close button {
+    /* width: 20px; */
+    height: 28px;
+    border: 0;
+    background: none;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    /* line-height: 28px; */
+    cursor: pointer;
+}
+.login fieldset {
+    padding: 28px 28px 0;
+}
+.login .field {
+    margin-bottom: 5px;
+} 
+.login .inp_field {
+    width: 326px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    border-color: #b7b7b7 #e1e1e1 #e1e1e1 #b7b7b7;
+    text-indent: 10px;
+    border-radius: 3px;
+}
+.login .inp_field::placeholder {
+    color:#aaa;
+}
+.login .btn_area {
+    padding: 5px 0 10px;
+    *zoom: 1;
+}
+.login .btn_area:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.login .btn_area .left {
+    float:left;
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+.login .btn_area .right {
+    float:right;
+    height: 30px;
+    padding: 0 20px;
+    border: 1px solid #3273dc;
+    border-radius: 4px;
+    background-color: #3273dc;
+    color: #fff;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.login .btn_area .right:hover {
+    background-color: #3b83f8;
+    transition: all 0.6s;
+}
+button img {
+    width: 20px;
+}
+
+.login .link {
+    border-top: 1px solid #aaa;
+    font-size: 11px;
+    text-align: center;
+    line-height: 42px;
+    
+}
+.login .link li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+}
+.login .link li {
+    display: inline-block;
+    padding-right: 12px;
+    margin-right: 6px;
+    border-right: 1px solid #c3c3c3;
+    line-height: 12px;
+}
+.login .link li a {
+    text-decoration: none;
+    color: #767676;
+}
+.login .link li a:hover {
+    color: blue
+}
+.bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+
+}
+.sns {
+    width: 100%;
+    text-align: center;
+    margin: inherit;
+}
+.sns ul li {
+    margin: 14px 0 0;
+}
+.sns img {
+    width: 350px;
+}
