@@ -5,9 +5,14 @@
     include $_SERVER['DOCUMENT_ROOT'].'/dev_agc/common/session.php';
     include $_SERVER['DOCUMENT_ROOT'].'/dev_agc/common/connection.php';
     include $_SERVER['DOCUMENT_ROOT'].'/dev_agc/common/setCookie.php';
+    // server check
+    $host_check = $_SERVER['HTTP_HOST'];
     $base_URL = $_SERVER['REQUEST_URI'];
     $base_URL = substr($base_URL,13);
     $base_URL2 = substr($base_URL,0,23);
+
+    $real_sever = "http://gksrnjstn31.cafe24.com/bbs/board.php";
+    $real_sever = substr($real_sever, 34);
 
     $sql = " SELECT count(wr_id) FROM dev_notice";
     $result = $dbConnect->query($sql);
@@ -62,6 +67,7 @@
         $nowPageColor = 'unset';
 
         $sty_m = "";
+        if($host_check == 'localhost'):
             if($base_URL == 'board.php'):
                 $sty = 'about';
                 $sty_m = 'about_m';
@@ -84,7 +90,30 @@
                 $sty = 'about';
                 $sty_m = 'about_m';
             endif;
-            
+        else:
+            if($real_sever == 'board.php'):
+                $sty = 'about';
+                $sty_m = 'about_m';
+            elseif($real_sever == 'view.php'):
+                $sty = 'container';
+                $sty_m = 'container_m';
+            elseif($real_sever == 'write.php'):
+                $sty = 'content';
+                $sty_m = 'content_m';
+            elseif($real_sever == 'view.php?wr_id='.$boardID):
+                $sty = 'container';
+                $sty_m = 'container_m';
+            elseif($real_sever == 'board.php?page='.$i):
+                $sty = 'about';
+                $sty_m = 'about_m';
+            elseif($real_sever == 'SearchResult.php?serach'):
+                $sty = 'about';
+                $sty_m = 'about_m';
+            elseif($real_sever == 'qa.php'):
+                $sty = 'about';
+                $sty_m = 'about_m';
+            endif;
+        endif;
     }
     
     ?>
