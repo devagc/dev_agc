@@ -15,14 +15,14 @@
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="img/bord.jpg" class="d-block w-100" alt="...">
+                <img src="img/mbanner_1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="h_2">부담스럽지 않지만!</h5>
                     <p class="h_2">기업의 이미지에 맞는 홈페이지를 만들어드립니다.</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="img/it.jpg" class="d-block w-100" alt="...">
+                <img src="img/bg.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="h_3">가지고 계신 홈페이지가 오래된거라면?</h5>
                     <p class="h_3">부담스럽지 않게 유지보수도 해드릴게요!</p>
