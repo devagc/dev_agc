@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="board.php" style="background-color:#fff;color:#000;">공지사항</a></li>
                 <li><a href="qa.php">Q & A</a></li>
-                <li><a href="#">이벤트</a></li>
+                <li><a href="contact.php" target="_blank">이벤트</a></li>
             </ul>
         </div>
     </div>
