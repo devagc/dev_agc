@@ -34,6 +34,10 @@
     </div>
     <!-- //header -->
      <!-- header -->
+     <?php
+
+     if(!($base_URL2 == 'SearchResult.php?serach' || $real_sever2 == 'SearchResult.php?serach')):
+     ?>
      <div id="header" class="header">
         <div class="nav">
             <div class="logo">
@@ -50,4 +54,5 @@
             </div>
         </div>
     </div>
+     <?php endif; ?>
     <!-- //header -->

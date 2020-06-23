@@ -1,5 +1,5 @@
 <?php 
-    include 'head.php';
+    include 'menu.php';
 
     $serach = $_GET['serach'];
     $serach_name = $_SESSION['serach'];
@@ -102,5 +102,5 @@
         </form>
         <!-- pagenation -->
         <?php 
-          include $_SERVER['DOCUMENT_ROOT'].'/dev_agc/common/pagenation.php';
+          include 'footer.php';
         ?>
