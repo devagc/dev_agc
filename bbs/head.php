@@ -9,8 +9,10 @@
     $host_check = $_SERVER['HTTP_HOST'];
     $base_URL = $_SERVER['REQUEST_URI'];
     $base_URL = substr($base_URL,13);
+    // local search 때문에 만들어줌
     $base_URL2 = substr($base_URL,0,23);
-
+    $base_URL3 = substr($base_URL,0,14);
+    
     // $real_sever = "gksrnjstn31.cafe24.com/bbs/board.php";
     // $real_sever = substr($real_sever, 27);
 
@@ -18,6 +20,10 @@
     $real_sever .= $_SERVER['REQUEST_URI'];
     $real_sever = substr($real_sever, 27);
     
+    // 실섭 search 때문에 만들어줌
+    $real_sever2 = substr($real_sever, 0, 23);
+    $real_sever3 = substr($real_sever, 0, 14);
+
     $sql = " SELECT count(wr_id) FROM dev_notice";
     $result = $dbConnect->query($sql);
     $conTotalCount = $result->fetch_array(MYSQLI_ASSOC);
@@ -84,7 +90,7 @@
             elseif($base_URL == 'view.php?wr_id='.$boardID):
                 $sty = 'container';
                 $sty_m = 'container_m';
-            elseif($base_URL == 'board.php?page='.$i):
+            elseif($base_URL3 == 'board.php?page'):
                 $sty = 'about';
                 $sty_m = 'about_m';
             elseif($base_URL2 == 'SearchResult.php?serach'):
@@ -107,10 +113,10 @@
             elseif($real_sever == 'view.php?wr_id='.$boardID):
                 $sty = 'container';
                 $sty_m = 'container_m';
-            elseif($real_sever == 'board.php?page='.$i):
+            elseif($real_sever3 == 'board.php?page'):
                 $sty = 'about';
                 $sty_m = 'about_m';
-            elseif($real_sever == 'SearchResult.php?serach'):
+            elseif($real_sever2 == 'SearchResult.php?serach'):
                 $sty = 'about';
                 $sty_m = 'about_m';
             elseif($real_sever == 'qa.php'):
