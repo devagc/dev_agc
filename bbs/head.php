@@ -11,10 +11,13 @@
     $base_URL = substr($base_URL,13);
     $base_URL2 = substr($base_URL,0,23);
 
+    // $real_sever = "gksrnjstn31.cafe24.com/bbs/board.php";
+    // $real_sever = substr($real_sever, 27);
+
     $real_sever = $_SERVER['HTTP_HOST'];
     $real_sever .= $_SERVER['REQUEST_URI'];
-    $real_sever = substr($real_sever, 34);
-
+    $real_sever = substr($real_sever, 27);
+    
     $sql = " SELECT count(wr_id) FROM dev_notice";
     $result = $dbConnect->query($sql);
     $conTotalCount = $result->fetch_array(MYSQLI_ASSOC);
