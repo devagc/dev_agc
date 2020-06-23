@@ -146,4 +146,13 @@
     <?php
         }
     ?>
+    <style>
+    <?php 
+        if($real_sever2 == 'SearchResult.php?serach'):
+    ?>
+        #header{
+            margin-bottom:3%;
+        }
+    <?php endif; ?>
+    </style>
 </head>
