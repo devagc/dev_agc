@@ -25,7 +25,7 @@
             <ul>
                 <a href="#"><li><img src="../img/sns_p.jpg" alt=""></li></a>
                 <a href="#"><li><img src="../img/sns_k.jpg" alt=""></li></a>
-                <a href="#"><li><img src="../img/sns_n.jpg" alt=""></li></a>
+                <a href="naverlogin.php"><li><img src="../img/sns_n.jpg" alt=""></li></a>
             </ul>
         </div>
         <form method="POST" action="loginok.php" id="loginForm" name="submitform">
