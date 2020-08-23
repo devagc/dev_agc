@@ -169,7 +169,7 @@
           </div>
         </div>
         <div class="btn">
-            <a href="#">More</a>
+            <a href="#">전체보기</a>
         </div>
       <?php 
         endif;
